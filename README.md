@@ -1,34 +1,61 @@
-This repository contains the initial HTML structure for the "Cake, fun and confetti" website. It is developed as part of a Web Development course delivered by Code Institute in collaboration with the University of Peterborough.
+# Cake, fun and confetti – Web Development Project
 
-Project Overview
+This repository contains the source code for the "Cake, fun and confetti" website. It is developed as part of a Web Development course delivered by Code Institute in collaboration with the University of Peterborough.
 
-This version includes the basic HTML5 document setup and serves as the foundation for further development of a responsive, accessible party planning website. Future stages will incorporate styled content, interactivity, and mobile responsiveness.
+## Project Overview
 
-Included in this Version
+This project aims to build a responsive and accessible party planning website. It follows a staged development process, starting with a basic HTML5 structure and progressively adding styled content, interactive features, and mobile-friendly layout.
 
-HTML5 doctype declaration
+---
 
-HTML document language set to English
+## First Commit – Basic HTML Structure
 
-UTF-8 character encoding
+### Included in this Version
 
-Viewport meta tag for mobile responsiveness
+- HTML5 `<!DOCTYPE>` declaration
+- HTML document language set to English
+- UTF-8 character encoding
+- Viewport meta tag for mobile responsiveness
+- Page title set to **Cake, fun and confetti**
+- Empty `<body>` element prepared for future content
 
-Page title set to "Cake, fun and confetti"
+### Technologies Used
 
-Empty body element prepared for future content
+- HTML5
 
-Technologies Used
+### Future Enhancements
 
-HTML5
+- Implementation of a responsive navigation bar
+- Development of sections including About, Services, Gallery, and Contact
+- Integration of Bootstrap for layout and styling
+- Application of semantic HTML and accessibility best practices
 
-Future Enhancements
+---
 
-Implementation of a responsive navigation bar
+## Second Commit – Responsive Navbar
 
-Development of sections including About, Services, Gallery, and Contact
+This version introduces a responsive navigation bar to the party planner website, **Cake, fun and confetti**, improving the site’s layout and user experience.
 
-Integration of Bootstrap for layout and styling
+### Features in This Version
 
-Application of semantic HTML and accessibility best practices
+- Brand name: **Cake, fun and confetti**
+- Navigation links:
+  - Home
+  - About
+  - Services
+  - Gallery
+  - Contact
+- Responsive design using Bootstrap 5
+- Collapsible menu for smaller screens
+- Clean and semantic HTML structure
 
+### Technologies Used
+
+- HTML5
+- Bootstrap 5 (via CDN)
+
+---
+
+## Acknowledgements
+
+This project is part of the coursework for the **Web Development** module provided by **Code Institute** in collaboration with the **University of Peterborough**.
