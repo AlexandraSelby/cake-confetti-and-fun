@@ -1,0 +1,128 @@
+/* Fonts and Base Styles */
+body {
+  font-family: 'Halant', serif;
+  background-color: var(--background);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+
+/* Color Palette */
+:root {
+  --blue-primary: #02ACCE;
+  --yellow: #FDCB3B;
+  --cream: #FDE7A9;
+  --blue-accent: #28ADCE;
+  --orange: #FA8B46;
+
+  --background: #FDE7A9;
+  --text: #1A1A1A;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--blue-primary) !important;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  font-family: 'Hachi Maru Pop', cursive;
+  color: white;
+  font-size: clamp(1rem,2vw,1.5rem);
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand:hover {
+  color: var(--yellow);
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+}
+
+.nav-link:hover {
+  color: var(--yellow) !important;
+}
+
+.logo-img {
+  height: 30px;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+/* Hero Section */
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Hachi Maru Pop', cursive;
+  color: var(--blue-accent);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--orange);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--yellow);
+  color: var(--text);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-size: clamp(0.5rem, 2vw);
+  }
+
+  .nav-link {
+    padding: 0.5rem 1rem;
+  }
+
+  .logo-img {
+    height: 40px;
+  }
+}
+
+@media (max-width: 767.98px)
+ {
+  .navbar-brand {
+    font-size: 1.0rem;
+    width: 40%;
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
+  }
+  #button {
+    padding: 0%;
+  }
+
+  .logo-img {
+    height: 36px;
+  }
+}
+@media (max-width: 480px) { 
+  
+  .navbar-brand {
+    margin: 0 auto;
+    white-space: normal;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+  }
+
+  .logo-img {
+    height: 30px;
+  }
+}
+
