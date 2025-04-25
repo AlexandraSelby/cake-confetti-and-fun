@@ -53,10 +53,14 @@ body {
   margin-right: 0.5rem;
 }
 
-/* Hero Section */
+/*hero section*/
 .hero {
-  padding: 4rem 2rem;
+  background: url('assets/images/children-having-fun-birthday-party.jpg') center/cover no-repeat;
+  color: white;
+  min-height: 100vh; /* adjust as needed */
   text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 h1, h2, h3 {
