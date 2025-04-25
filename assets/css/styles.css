@@ -1,6 +1,6 @@
 /* Fonts and Base Styles */
 body {
-  font-family: 'Halant', serif;
+  font-family: "Halant", serif;
   background-color: var(--background);
   color: var(--text);
   margin: 0;
@@ -9,26 +9,29 @@ body {
 
 /* Color Palette */
 :root {
-  --blue-primary: #02ACCE;
-  --yellow: #FDCB3B;
-  --cream: #FDE7A9;
-  --blue-accent: #28ADCE;
-  --orange: #FA8B46;
+  --blue-primary: #02acce;
+  --yellow: #fdcb3b;
+  --cream: #fde7a9;
+  --blue-accent: #28adce;
+  --orange: #fa8b46;
 
-  --background: #FDE7A9;
-  --text: #1A1A1A;
+  --background: #fde7a9;
+  --text: #1a1a1a;
 }
 
 /* Navbar */
 .navbar {
   background-color: var(--blue-primary) !important;
   padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar-brand {
-  font-family: 'Hachi Maru Pop', cursive;
+  font-family: "Hachi Maru Pop", cursive;
   color: white;
-  font-size: clamp(1rem,2vw,1.5rem);
+  font-size: clamp(1rem, 2vw, 1.5rem);
   display: flex;
   align-items: center;
 }
@@ -55,17 +58,62 @@ body {
 
 /*hero section*/
 .hero {
-  background: url('assets/images/children-having-fun-birthday-party.jpg') center/cover no-repeat;
-  color: white;
-  min-height: 100vh; /* adjust as needed */
+  background: url("/assets/images/children-and-cake.png") center/cover no-repeat;
+  background-attachment: fixed;
+  color: --orange;
+  min-height: 100vh;
   text-align: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 5rem;
 }
 
-h1, h2, h3 {
-  font-family: 'Hachi Maru Pop', cursive;
+.hero h1,
+.hero p {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  margin-top: 5rem;
+  color: var(--blue-primary);
+}
+.hero .container {
+  padding-top: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  width: fit-content;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Hachi Maru Pop", cursive;
   color: var(--blue-accent);
+}
+
+/*Overlay*/
+.hero {
+  position: relative;
+  background: url("assets/images/children-having-fun-birthday-party.jpg")
+    center/cover no-repeat;
+  min-height: 80vh;
+}
+
+.mb-3,
+.mb4 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: fit-content;
+  height: 215px; /* Adjust the height of the overlay */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2; /* Ensure content is on top of the overlay */
 }
 
 /* Buttons */
@@ -94,10 +142,9 @@ h1, h2, h3 {
   }
 }
 
-@media (max-width: 767.98px)
- {
+@media (max-width: 767.98px) {
   .navbar-brand {
-    font-size: 1.0rem;
+    font-size: 1rem;
     width: 40%;
   }
 
@@ -112,8 +159,7 @@ h1, h2, h3 {
     height: 36px;
   }
 }
-@media (max-width: 480px) { 
-  
+@media (max-width: 480px) {
   .navbar-brand {
     margin: 0 auto;
     white-space: normal;
@@ -129,4 +175,3 @@ h1, h2, h3 {
     height: 30px;
   }
 }
-
