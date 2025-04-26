@@ -1,6 +1,6 @@
 /* Fonts and Base Styles */
 body {
-  font-family: "Halant", serif;
+  font-family: "Halant", sans-serif;
   background-color: var(--background);
   color: var(--text);
   margin: 0;
@@ -15,8 +15,9 @@ body {
   --blue-accent: #28adce;
   --orange: #fa8b46;
 
-  --background: #fde7a9;
+  --background: #fa8b46;;
   --text: #1a1a1a;
+  --card-background:#02acce;
 }
 
 /* Navbar */
@@ -131,14 +132,35 @@ h3 {
 
 /*  Card hover effect */
 .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* purple: smooth movement */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* purple: base shadow */
-  border: none; /* purple: no border */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+  border: none; 
+  background-color:var(--card-background);
+}
+
+
+
+/* Uniform styling for card text */
+.card-body p {
+  font-size: 1rem; 
+  line-height: 1.6; 
+  margin-bottom: 15px;
+  text-align: justify; 
+  color: var(--cream);
+  font-weight: 300;
+}
+
+/* Title styling for consistency */
+.card-body h2 {
+  font-size: 1.5rem; 
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: var(--yellow);
 }
 
 .card:hover {
-  transform: translateY(-8px); /* purple: lift up on hover */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* purple: bigger shadow on hover */
+  transform: translateY(-8px); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
 }
 
 /*Wrapper with side paddings */
