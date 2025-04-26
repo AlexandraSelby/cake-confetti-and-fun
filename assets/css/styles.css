@@ -106,9 +106,9 @@ h3 {
   top: 50%;
   left: 0;
   width: fit-content;
-  height: 215px; 
-  background-color: rgba(0, 0, 0, 0.5); 
-  z-index:2
+  height: 215px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
 .hero .container {
@@ -129,6 +129,35 @@ h3 {
 
 /*main section*/
 
+/*  Card hover effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* purple: smooth movement */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* purple: base shadow */
+  border: none; /* purple: no border */
+}
+
+.card:hover {
+  transform: translateY(-8px); /* purple: lift up on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* purple: bigger shadow on hover */
+}
+
+/*Wrapper with side paddings */
+.custom-wrapper {
+  width: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 1vh;
+}
+
+/*wrapper with side paddings for larger screens*/
+
+@media (min-width: 1200px) {
+  .custom-wrapper {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 2vh;
+  }
+}
 
 /* Responsive Design */
 @media (min-width: 768px) {
@@ -178,4 +207,3 @@ h3 {
     height: 30px;
   }
 }
-
