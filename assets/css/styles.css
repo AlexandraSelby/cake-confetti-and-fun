@@ -14,7 +14,6 @@ body {
   --cream: #fde7a9;
   --blue-accent: #28adce;
   --orange: #fa8b46;
-
   --background: #fa8b46;;
   --text: #1a1a1a;
   --card-background:#02acce;
@@ -57,34 +56,6 @@ body {
   margin-right: 0.5rem;
 }
 
-/*hero section*/
-.hero {
-  background: url("/assets/images/children-and-cake.png") center/cover no-repeat;
-  background-attachment: fixed;
-  color: --orange;
-  min-height: 100vh;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 5rem;
-}
-
-.hero h1,
-.hero p {
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-  margin-top: 5rem;
-  color: var(--blue-primary);
-}
-.hero .container {
-  padding-top: 390px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 70vh;
-  width: fit-content;
-}
 
 h1,
 h2,
@@ -93,29 +64,33 @@ h3 {
   color: var(--blue-accent);
 }
 
-/*Overlay*/
-.hero {
-  position: relative;
-  background: url("assets/images/children-having-fun-birthday-party.jpg")
-    center/cover no-repeat;
-  min-height: 80vh;
+/*Hero image*/ 
+
+/* Hero Image */
+.hero-image {
+  background-image: url('../images/hero-image23.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+  background-color:var(--background);
+  border-radius: 1rem; 
 }
 
-.mb-3,
-.mb4 {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: fit-content;
-  height: 215px;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  .hero-image {
+    min-height: 60vh;
+  }
 }
 
-.hero .container {
-  position: relative;
-  z-index: 2; /* Ensure content is on top of the overlay */
+/* Small screens (phones) */
+@media (max-width: 576px) {
+  .hero-image {
+    min-height: 40vh;
+  }
 }
+
 
 /* Buttons */
 .btn-primary {
