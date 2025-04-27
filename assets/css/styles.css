@@ -174,7 +174,7 @@ h3 {
 }
 
 /* Responsive Navbar & Logo */
-@media (min-width: 769px) {
+@media (min-width: 576px) {
   .navbar-brand {
     font-size: clamp(0.5rem, 2vw);
   }
@@ -188,7 +188,7 @@ h3 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 575px) {
   .navbar-brand {
     font-size: 1rem;
     width: 40%;
