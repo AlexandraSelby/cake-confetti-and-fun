@@ -1,4 +1,9 @@
 /* Fonts and Base Styles */
+html,
+body{
+  height:100%;
+  margin:0;
+}
 body {
   font-family: "Halant", sans-serif;
   background-color: var(--background);
@@ -175,8 +180,7 @@ h3 {
   padding-bottom: 0;
   z-index: 1000;
   margin: 0;
-  position:relative;
-  
+  position: relative;
 }
 
 /* Footer container: stack & center */
@@ -185,8 +189,6 @@ h3 {
   flex-direction: column;
   align-items: center;
   text-align: center;
- 
-
 }
 
 /* “Contact” always first */
@@ -197,12 +199,12 @@ h3 {
 /* Social links next */
 .footer-social {
   order: 2;
-  color:white;
+  color: white;
 }
 
 /* Style individual social links */
 .footer-social a {
-  color:white;
+  color: white;
   text-decoration: none;
   margin: 0 0.5rem;
   font-size: clamp(1rem, 2vw, 1.5rem); /* scales with viewport */
@@ -215,8 +217,7 @@ h3 {
   font-style: normal;
   font-weight: normal;
   text-rendering: auto;
-  line-height: 1
-  
+  line-height: 1;
 }
 
 /* smooth transition on all footer links */
@@ -230,10 +231,9 @@ h3 {
 .footer-social a:hover,
 .footer-link:hover,
 .footer-contact-btn:hover {
-  color:var(--yellow)!important;
-  background-color:var(--blue-primary);
+  color: var(--yellow) !important;
+  background-color: var(--blue-primary);
 }
-
 
 /* Copyright last */
 .footer-copy {
@@ -241,7 +241,6 @@ h3 {
   font-size: 0.9rem;
   color: white;
 }
-
 
 /* Larger screen wrapper */
 @media (min-width: 1200px) {
