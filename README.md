@@ -213,7 +213,56 @@ h1, h2, h3 { font-family: 'Hachi Maru Pop', cursive; color: var(--blue-primary);
   --blue-accent: #28ADCE; --orange: #FA8B46; --text: #1A1A1A;
   --card-background: #02ACCE;
 }
+
+# Footer Section
+
+## Overview
+This section covers the implementation of a responsive footer using Bootstrap utility classes, Font Awesome icons for social links, and custom CSS styling.
+
+## Structure
+```html
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-contact">
+      <!-- Contact info or button -->
+    </div>
+    <div class="footer-social">
+      <!-- Font Awesome social links -->
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <!-- more icons -->
+    </div>
+    <div class="footer-copy">
+      &copy; 2025 Your Company. All rights reserved.
+    </div>
+  </div>
+</footer>
 ```
+
+## Styling
+- `.footer`: Background set to `var(--blue-primary)` and full-width layout.
+- `.footer-container`: Flex container, column direction, centered text.
+- `.footer-contact`, `.footer-social`, `.footer-copy`: Ordered using `order` property to control stacking.
+- Social links styled with transitions and hover effects swapping to accent yellow.
+
+## Push-Down Behavior
+To ensure the footer stays at the bottom when page content is short, the following CSS is applied:
+```css
+html, body { height: 100%; margin: 0; }
+body { display: flex; flex-direction: column; }
+.custom-wrapper { flex: 1; }
+.footer { position: relative; }
+```
+
+## Resources
+- [Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.0/layout/flex/)  
+- [Font Awesome 6](https://fontawesome.com/)  
+- Google Fonts: [Halant](https://fonts.google.com/specimen/Halant), [Hachi Maru Pop](https://fonts.google.com/specimen/Hachi+Maru+Pop)
+
+---
+*Generated April 28, 2025*
+
+
 
 ## Version History and Commit Highlights
 
@@ -222,15 +271,18 @@ h1, h2, h3 { font-family: 'Hachi Maru Pop', cursive; color: var(--blue-primary);
 * **Apr 25, 2025** – Applied Bootstrap grid; added sticky navbar; initial hero design.
 * **Apr 23, 2025** – Integrated Google Fonts; defined CSS variables; updated README.
 * **Apr 22, 2025** – Created core HTML and README; configured navbar and layout.
+* **Apr 28, 2025** - Footer Section and design. 
+
 
 ## Future Enhancements
+
 
 * Develop pages for each card (About, Services, Special Touch, Contact) and link via card buttons.
 * Implement a contact form with client and server validation.
 * Add a Bootstrap modal for quick quotes or newsletter signup.
 * Conduct accessibility audits (ARIA roles, keyboard focus, contrast).
-
-## How to Use This Work
+ 
+ ## How to use this work
 
 * Fork or clone the repository to experiment with layouts, styles, and assets.
 * Customize CSS variables or replace Google Fonts to match your brand.
@@ -240,9 +292,12 @@ h1, h2, h3 { font-family: 'Hachi Maru Pop', cursive; color: var(--blue-primary);
 
 ### Acknowledgements
 
-Media assets (logo, illustrations, posters) designed using **Canva**.  
-Typography supplied by **Google Fonts**.  
-Frameworks and libraries courtesy of **Bootstrap 5** and **JavaScript (Bootstrap JS bundle)**.  
-Version control managed with **Git & GitHub**.  
-Coursework executed under the **Web Development** module of Code Institute and University of Peterborough.
+
+* Media assets (logo, illustrations, posters) designed using Canva - https://www.canva.com
+
+* Typography supplied by Google Fonts - https://fonts.google.com
+
+* Frameworks and libraries courtesy of Bootstrap 5 - https://getbootstrap.com/ and the Bootstrap JS bundle - https://getbootstrap.com/docs/5.0/getting-started/javascript/
+
+* Version control managed with Git - https://git-scm.com and GitHub - https://github.com/
 
