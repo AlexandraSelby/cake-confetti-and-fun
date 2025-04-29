@@ -237,6 +237,15 @@ h3 {
   background-color: var(--blue-primary);
 }
 
+ /*Contact page */
+ /*contact page styling is done by reusing and adjusting classes and style used for card grid in home page*/
+
+/* Custom overrides */
+@media (min-width: 576px) {
+  .navbar-brand {
+    font-size: clamp(0.5rem, 2vw, 1.25rem);
+  }
+}
 /* Copyright last */
 .footer-copy {
   order: 3;

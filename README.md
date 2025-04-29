@@ -252,17 +252,157 @@ html, body { height: 100%; margin: 0; }
 body { display: flex; flex-direction: column; }
 .custom-wrapper { flex: 1; }
 .footer { position: relative; }
+
+
+### Contact Form Component
+
+**This snippet demonstrates how to implement a contact form using Bootstrap utility and component classes. All custom CSS rules have been removed in favor of importing Bootstrap in `styles.css`
+
+Form created by Dekartmc and imported from :https://www.creative-tim.com/twcomponents/component/responsive-contact-form**
+
+
+---
+
+## Changes Summary
+
+- **Classes Added**
+  - `custom-wrapper`, `card`, `shadow`, `rounded`, `card-body`, `text-uppercase`, `mb-4`
+  - Form utilities: `row g-3`, input grid classes (`col-md-6`, `col-12`, `col-12 col-md-4`)
+  - Layout utilities: `container vh-100 d-flex justify-content-center align-items-center`, `row w-100`
+  - Column classes: `col-lg-8 mb-4`, `col-lg-4`
+  - Icon utilities: `d-flex mb-3 w-75`, `fs-3`, `me-3`, heading utilities: `h5`, `mb-1`, `mb-0`
+
+- **Classes Removed**
+  - Custom wrappers: `bg-white p-4`, `contact-card`
+  - Typography: `fw-bold`, `display-5`
+  - Text styling classes: `text-secondary fw-light`, `card-title`, `card-text`
+
+---
+
+## HTML Fragment (no head)
+
+
+<!--Contact form-->
+    <section class="contact-section custom-wrapper">
+        <div class="container vh-100 d-flex justify-content-center align-items-center">
+          <div class="row w-100">
+      
+            <!-- Form Column -->
+            <div class="col-lg-8 mb-4">
+              <div class="card shadow rounded">
+                <div class="card-body">
+                  <h1 class="text-uppercase mb-4">Send us a<br/>message</h1>
+                  <form class="row g-3">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="First Name*" />
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Last Name*" />
+                    </div>
+                    <div class="col-md-6">
+                      <input type="email" class="form-control" placeholder="Email*" />
+                    </div>
+                    <div class="col-md-6">
+                      <input type="tel" class="form-control" placeholder="Phone*" />
+                    </div>
+                    <div class="col-12">
+                      <textarea class="form-control" rows="6" placeholder="Message*"></textarea>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <button type="submit" class="btn btn-primary w-100 text-uppercase">Send Message</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Contact Info Card -->
+            <div class="col-lg-4">
+              <div class="card shadow rounded">
+                <div class="card-body">
+                  <h2 class="text-uppercase mb-3">Drop in our location:</h2>
+                  <p class="mb-4">
+                    
+                  </p>
+      
+                  <div class="d-flex mb-3 w-75">
+                    <div>
+                      <h3 class="h5 mb-1">We are available to talk about your party, Monday to Friday, 8 am to 4pm:</h3>
+                      <p class="mb-0">
+                        <i class="fas fa-map-marker-alt fs-3 me-3"></i>
+                        23 Darling House, Faryland Village,<br/>
+                        East Wonderland, 12MY XXUP,<br/>
+                        Edwyne - Summer Kingdom
+                      </p>
+                    </div>
+                  </div>
+      
+                  <div class="d-flex mb-3 w-75">
+                    <i class="fas fa-phone-alt fs-4 me-3"></i>
+                    <div>
+                      <h3 class="h5 mb-1">Call Us</h3>
+                      <p class="mb-0">Tel: 01234500000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+
+            <!--Footer-->
+          <section>
+            <footer class="footer">
+              <div class="footer-container">
+                <!-- Contact Link -->
+                <div class="footer-contact">
+                  <img
+            src="assets/images/cake-logo.png"
+            alt="Logo"
+            class="logo-img me-2"
+              />  
+              <div class="footer-contact contact-link">
+               <a href="contact.html" class="btn btn-outline-light footer-contact-btn">Contact us</a>
+                </div>
+                
+            
+                <!-- Social Links -->
+                <div class="footer-social social-link">
+                  <a href="https://facebook.com/yourpage" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                  <a href="https://twitter.com/yourprofile" aria-label="Twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="https://instagram.com/yourprofile" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+                
+                <!-- Rights Reserved -->
+                <div class="footer-copy">
+                  &copy; 2025 Cake,Confetti and Fun. All rights reserved.
+                </div>
+              </div>
+            </footer>
+          </section>
+              <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+```
+
+
+
 ```
 
 ## Resources
 - [Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.0/layout/flex/)  
 - [Font Awesome 6](https://fontawesome.com/)  
 - Google Fonts: [Halant](https://fonts.google.com/specimen/Halant), [Hachi Maru Pop](https://fonts.google.com/specimen/Hachi+Maru+Pop)
-
----
-*Generated April 28, 2025*
-
-
+- Contact form :https://www.creative-tim.com/twcomponents/component/responsive-contact-form - created by Dekartmc
 
 ## Version History and Commit Highlights
 
@@ -271,7 +411,8 @@ body { display: flex; flex-direction: column; }
 * **Apr 25, 2025** – Applied Bootstrap grid; added sticky navbar; initial hero design.
 * **Apr 23, 2025** – Integrated Google Fonts; defined CSS variables; updated README.
 * **Apr 22, 2025** – Created core HTML and README; configured navbar and layout.
-* **Apr 28, 2025** - Footer Section and design. 
+* **Apr 28, 2025** - Footer Section and design + contact page html only, without edits
+* **Apt 39 ,2025** - Styled and added content to contact page/form
 
 
 ## Future Enhancements
@@ -298,6 +439,8 @@ body { display: flex; flex-direction: column; }
 * Typography supplied by Google Fonts - https://fonts.google.com
 
 * Frameworks and libraries courtesy of Bootstrap 5 - https://getbootstrap.com/ and the Bootstrap JS bundle - https://getbootstrap.com/docs/5.0/getting-started/javascript/
+
+* Contact form :https://www.creative-tim.com/twcomponents/component/responsive-contact-form - created by Dekartmc
 
 * Version control managed with Git - https://git-scm.com and GitHub - https://github.com/
 
