@@ -173,6 +173,24 @@ h3 {
   padding-top: 5vh;
 }
 
+/* Fix for mobile layout */
+@media (max-width: 576px) {
+  .custom-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+  }
+}
+
+/* Larger screen wrapper */
+@media (min-width: 1200px) {
+  .custom-wrapper {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 2vh;
+  }
+}
+
 /*Footer*/
 /* Footer background */
 .footer {
@@ -209,7 +227,7 @@ h3 {
   color: white;
   text-decoration: none;
   margin: 0 0.5rem;
-  font-size: clamp(1rem, 2vw, 1.5rem); /* scales with viewport */
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 .footer-social i {
@@ -237,8 +255,8 @@ h3 {
   background-color: var(--blue-primary);
 }
 
- /*Contact page */
- /*contact page styling is done by reusing and adjusting classes and style used for card grid in home page*/
+/*Contact page */
+/*contact page styling is done by reusing and adjusting classes and style used for card grid in home page*/
 
 /* Custom overrides */
 @media (min-width: 576px) {
@@ -246,20 +264,24 @@ h3 {
     font-size: clamp(0.5rem, 2vw, 1.25rem);
   }
 }
+
+/*About page*/
+.about-round-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
 /* Copyright last */
 .footer-copy {
   order: 3;
   font-size: 0.9rem;
   color: white;
-}
-
-/* Larger screen wrapper */
-@media (min-width: 1200px) {
-  .custom-wrapper {
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 2vh;
-  }
 }
 
 /* Responsive Navbar & Logo */
