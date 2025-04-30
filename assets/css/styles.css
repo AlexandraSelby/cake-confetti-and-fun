@@ -270,12 +270,10 @@ h3 {
   width: 250px;
   height: 250px;
   object-fit: cover;
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1rem;
+  border-radius: 80%;
+  margin: 0 auto;
 }
+
 
 /* Copyright last */
 .footer-copy {
