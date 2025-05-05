@@ -164,6 +164,13 @@ h3 {
   color: var(--yellow);
 }
 
+.card-body h3 {
+  font-size:medium;
+  font-weight:lighter;
+  margin-bottom: 15px;
+  color: var(--cream);
+}
+
 /* Wrapper */
 .custom-wrapper {
   flex: 1;
