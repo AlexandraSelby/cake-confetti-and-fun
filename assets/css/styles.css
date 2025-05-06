@@ -19,14 +19,13 @@ body {
 
 /* Color Palette */
 :root {
-  --blue-primary: #008080;   
-  --yellow:       #ffd43b;   
-  --cream:        #fff2cc;   
-  --blue-accent:  #006666;   
-  --orange:       #e25a4f;   
-  --text:         #ffffff;   /* Sharp white for maximum contrast */
+  --blue-primary: #007b7b;   /* Accessible teal, retains charm */
+  --yellow:       #f7b500;   /* Deeper, warmer yellow for contrast */
+  --cream:        #fff4dc;   /* Softer cream with enough brightness */
+  --blue-accent:  #005f5f;   /* Darker accent teal for borders/effects */
+  --orange:       #c0392b;   /* Strong coral/red-orange for text contrast */
+  --text:         #ffffff;   /* Pure white for sharp legibility */
 }
-s
 
 
 /* Navbar */
