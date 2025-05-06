@@ -71,6 +71,74 @@ Live preview (via GitHub Pages if enabled):
 └── README.md              # Documentation and code explanations
 ```
 
+# Color Palette & Accessibility Update
+
+This document describes the CSS color palette for the Cake, Confetti & Fun website and the changes made to improve accessibility.
+
+---
+
+## Default Color Palette
+
+The base colors are defined in `assets/css/styles.css` under the `:root` selector:
+
+```css
+:root {
+  /* Primary and accent colors */
+  --blue-primary: #02ACCE;
+  --blue-accent:  #28ADCE;
+  --yellow:       #FDCB3B;
+  --orange:       #FA8B46;
+
+  /* Background and text colors */
+  --cream:        #FDE7A9;
+  --text:         #1A1A1A;
+}
+```
+
+These colors support the site’s playful brand but required updates to meet WCAG 2.1 AA contrast standards.
+
+---
+
+## Accessibility-Driven Adjustments
+
+The following variables were updated based on WAVE accessibility testing ([Services page report](https://wave.webaim.org/report#/https://alexandraselby.github.io/cake-confetti-and-fun/services.html)):
+
+```css
+:root {
+  /* Primary and accent colors */
+  --blue-primary: #007b7b;   /* replaced #02ACCE for higher contrast */
+  --blue-accent:  #005f5f;   /* deepened for clearer links and hover states */
+  --yellow:       #faf190c3; /* added transparency for better legibility */
+  --orange:       #c0392b;   /* intensified red to meet contrast requirements */
+
+  /* Background and text colors */
+  --cream:        #f8f7f5;   /* softened background color */
+  --text:         #ffffff;   /* switched to white on colored backgrounds */
+}
+```
+
+* **Primary buttons and navbar** now use `--blue-primary: #007b7b` to achieve a contrast ratio of at least 4.5:1.
+* **Links and hover states** use `--blue-accent: #005f5f` for a clear distinction from the background.
+* **Accent highlights** apply a semi-transparent yellow (`--yellow: #faf190c3`) for better visibility on both light and dark sections.
+* **Error messages and warnings** use a stronger red (`--orange: #c0392b`) to stand out against the cream background.
+* **Text on colored backgrounds** is set to pure white (`--text: #ffffff`) for maximum readability.
+
+---
+
+## Testing and Validation
+
+After updating the variables, all pages were re-tested with the WAVE tool to confirm that:
+
+* Text meets a minimum contrast ratio of 4.5:1 for regular body text.
+* Graphical elements and icons have at least 3:1 contrast ratio against adjacent colors.
+
+Refer to the full report for details:
+
+[https://wave.webaim.org/report#/https://alexandraselby.github.io/cake-confetti-and-fun/services.html](https://wave.webaim.org/report#/https://alexandraselby.github.io/cake-confetti-and-fun/services.html)
+
+---
+
+
 ## Header and Navigation Bar
 
 A consistent header appears on every page, built with the `<nav>` element:
@@ -752,12 +820,12 @@ The section was placed immediately after the three service package cards, inside
 - **Apt 29 ,2025** - Styled and added content to contact page/form
 - **Apr 30 ,2025** - About page added by reusing index.html code and adapt it with Bootstrap classes and costum css.
 - **May 05 , 2025** - Fixed Contact page content aligment and footer. Created services.html page with content added
-- **May 06 , 2025** - Added `Special Touch` section to services and fixed/completed links and buttons acros all pages. - Added validation to contact form with minimal JS
+- **May 06 , 2025** - Added `Special Touch` section to services and fixed/completed links and buttons acros all pages. - Added validation to contact form with minimal JS - Tested all lines of code using css and html validator and fixed the issues - Tested accesabilty and changed the colour pallete
 
 ## Future Enhancements
 
 - Add a Bootstrap modal for quick quotes or newsletter signup.
-- Conduct accessibility audits (ARIA roles, keyboard focus, contrast).
+- Add Favicon icon 
 
 ## How to use this work
 
