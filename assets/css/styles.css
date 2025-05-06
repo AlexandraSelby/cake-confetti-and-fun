@@ -23,9 +23,10 @@ body {
   --yellow:       #ffd43b;   
   --cream:        #fff2cc;   
   --blue-accent:  #006666;   
-  --orange:       #f47c20;   
-  --text:         #fff8e1;  
+  --orange:       #e25a4f;   
+  --text:         #ffffff;   /* Sharp white for maximum contrast */
 }
+s
 
 
 /* Navbar */
