@@ -473,6 +473,112 @@ This simple tweak gives the image a circular style, helping the page feel more p
 
 ```
 
+### Services Page
+
+* **Services (`services.html`)**: Built to introduce three themed party packages using Bootstrap cards with playful visuals, custom images, and clear call-to-action buttons.
+
+---
+
+## Services Page Notes
+
+The `services.html` page was created to present the three core offerings of the Cake, Confetti and Fun brand. It reuses the Bootstrap-based layout patterns from other pages while introducing custom content and image support for each package.
+
+Each card focuses on a specific service bundle and links directly to the contact page for easy user action.
+
+### Key features implemented:
+
+* **Three custom cards**: One for each package – Entertainment & Decor, Catering & Cake, and Full Party Experience.
+* **Descriptive images**: Each card uses a custom illustration with consistent sizing and matching soft pastel tones.
+* **Accessible alt text**: Images include helpful alt descriptions to improve accessibility and support screen readers.
+* **Call-to-action buttons**: Each card uses playful and inviting CTAs like `"Contact Us"`, easily linked to `contact.html`.
+
+---
+
+### Code Snippets (HTML)
+
+Each service package card follows a consistent Bootstrap 5 structure:
+
+#### 1. Balloon Bliss & Stage Magic
+
+```html
+<div class="col-12 col-md-12 col-lg-4  d-flex mb-4">
+  <div class="card h-100 flex-fill">
+    <img class="card-img-top shadow-lg"
+      src="assets/images/balloon-bliss-stage-magic-600w.png"
+      alt="A magician performing at a colourful party" />
+    <div class="card-body d-flex flex-column">
+      <h2 class="card-title">Balloon Bliss & Stage Magic</h2>
+      <p class="card-text">
+        From themed balloon garlands and silly games to face-painting and magic tricks,
+        our entertainers turn your space into a wonderland.
+      </p>
+      <a class="btn btn-primary mt-auto" href="contact.html">Contact Us</a>
+    </div>
+  </div>
+</div>
+```
+
+
+#### 2. Feast & Frosting Extravaganza
+
+```html
+<div class="col-12 col-md-12 col-lg-4 d-flex mb-4">
+  <div class="card flex-fill h-100">
+    <img src="assets/images/feast-frosting-extravaganza-600w.png"
+      alt="A table with snacks, drinks and a birthday cake"
+      class="card-img-top">
+    <div class="card-body d-flex flex-column">
+      <h2 class="card-title">Feast & Frosting Extravaganza</h2>
+      <p class="card-text">
+        Cakes, treats, and colourful snacks – we’ll provide a joyful feast that’s fun to eat and fabulous to look at.
+      </p>
+      <a href="contact.html" class="mt-auto btn btn-primary">Contact Us</a>
+    </div>
+  </div>
+</div>
+```
+
+#### 3. Ultimate Party Palooza
+
+```html
+<div class="col-12 col-md-12 col-lg-4 d-flex mb-4">
+  <div class="card h-100 flex-fill highlight">
+    <img src="assets/images/ultimate-party-palooza-600w.png"
+      class="card-img-top"
+      alt="Children laughing around party food and a clown entertainer" />
+    <div class="card-body d-flex flex-column">
+      <h2 class="card-title">Ultimate Party Palooza</h2>
+      <p class="card-text">
+        Everything included—decorations, entertainers, food, cake, party bags,
+        and even the clean-up when the fun’s over.
+      </p>
+      <a href="contact.html" class="btn btn-primary mt-auto">Contact Us</a>
+    </div>
+  </div>
+</div>
+```
+
+---
+
+### Layout Notes
+
+* Bootstrap’s grid system (`col-md-12 col-lg-4`) ensures the layout remains responsive across screen sizes.
+* Cards are styled with `d-flex`, `flex-column`, and `mt-auto` to maintain consistent alignment for button placement regardless of content height.
+* Images are 600px wide and proportional in height to preserve visual balance across the row.
+
+---
+
+### Button Text 
+
+
+| Package                       | Button text          |
+| ----------------------------- | -------------------------- |
+| Balloon Bliss & Stage Magic   | Book Your Party Fun        |
+| Feast & Frosting Extravaganza | Let’s Plan the Feast       |
+| Ultimate Party Palooza        | Get the Full Party Package |
+
+
+
 ## Version History and Commit Highlights
 
 * **Apr 27, 2025** – Swapped hero image for video background; refined media queries.
@@ -483,6 +589,7 @@ This simple tweak gives the image a circular style, helping the page feel more p
 * **Apr 28, 2025** - Footer Section and design + contact page html only, without edits
 * **Apt 29 ,2025** - Styled and added content to contact page/form
 * **Apr 30 ,2025** - About page added by reusing index.html code and adapt it with Bootstrap classes and costum css. 
+* **May 05 , 2025** - Fixed Contact page content aligment and footer. Created services.html page with content added
 
 
 ## Future Enhancements
