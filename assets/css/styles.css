@@ -19,12 +19,12 @@ body {
 
 /* Color Palette */
 :root {
-  --blue-primary:  #06d3fc;  
-  --yellow:        #fdd86d;  
-  --cream:         #fef4da;  
-  --blue-accent:   #4cbfdc;   
-  --orange:        #fbaa77;   
-  --text:          #333333;  
+  --blue-primary: #00a1c6;   /* Darker than before, more contrast */
+  --yellow:       #fcbf16;   /* Slightly deeper golden yellow */
+  --cream:        #fff5da;   /* Lighter & warmer cream */
+  --blue-accent:  #1c90b4;   /* Darker accent for clarity on light text */
+  --orange:       #f97c29;   /* Slightly deeper for legibility */
+  --text:         #fff7d6;   /* Pale cream-yellow for visibility on blue */
 }
 
 /* Navbar */
