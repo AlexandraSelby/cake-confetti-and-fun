@@ -19,12 +19,12 @@ body {
 
 /* Color Palette */
 :root {
-  --blue-primary: #008080;   /* Teal – strong yet soft, better for text contrast */
-  --yellow:       #ffd43b;   /* Deep but vibrant yellow – readable on teal */
-  --cream:        #fff2cc;   /* Very pale cream – excellent for backgrounds */
-  --blue-accent:  #006666;   /* Deep teal – perfect for text or CTA contrast */
-  --orange:       #f47c20;   /* Rich orange with strong contrast */
-  --text:         #fff8e1;   /* Light buttery cream – visible on teal/orange */
+  --blue-primary: #008080;   
+  --yellow:       #ffd43b;   
+  --cream:        #fff2cc;   
+  --blue-accent:  #006666;   
+  --orange:       #f47c20;   
+  --text:         #fff8e1;  
 }
 
 
