@@ -265,6 +265,15 @@ h3 {
 /*Contact page */
 /*contact page styling is done by reusing and adjusting classes and style used for card grid in home page*/
 
+.form-confirmation-message {
+  display: none;
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--cream)!important;
+}/*overides Bootsrap font setting/class, as not suitable*/
+
 /* Custom overrides */
 @media (min-width: 576px) {
   .navbar-brand {
