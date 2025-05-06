@@ -19,12 +19,12 @@ body {
 
 /* Color Palette */
 :root {
-  --blue-primary: #02acce;
-  --yellow: #fdcb3b;
-  --cream: #fde7a9;
-  --blue-accent: #28adce;
-  --orange: #fa8b46;
-  --text: #1a1a1a;
+  --blue-primary:  #06d3fc;   /* softer, brighter cyan */
+  --yellow:        #fdd86d;   /* a touch lighter, more pastel */
+  --cream:         #fef4da;   /* almost ivory, very light */
+  --blue-accent:   #4cbfdc;   /* a paler accent cyan */
+  --orange:        #fbaa77;   /* a soft apricot tone */
+  --text:          #333333;   /* medium dark gray for gentler contrast */
 }
 
 /* Navbar */
