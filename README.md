@@ -314,7 +314,7 @@ h3 {
 ````css
 :root {
   --blue-primary: #02ACCE; --yellow: #FDCB3B; --cream: #FDE7A9;
-  --blue-accent: #28ADCE; --orange: #FA8B46; --text: #1A1A1A;
+  --blue-accent: #28ADCE; --orange: #FA8B46; --text: #1A1A1gitA;
 }
 
 # Footer Section
