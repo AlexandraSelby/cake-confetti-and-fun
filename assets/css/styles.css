@@ -19,13 +19,14 @@ body {
 
 /* Color Palette */
 :root {
-  --blue-primary: #00a1c6;   /* Darker than before, more contrast */
-  --yellow:       #fcbf16;   /* Slightly deeper golden yellow */
-  --cream:        #fff5da;   /* Lighter & warmer cream */
-  --blue-accent:  #1c90b4;   /* Darker accent for clarity on light text */
-  --orange:       #f97c29;   /* Slightly deeper for legibility */
-  --text:         #fff7d6;   /* Pale cream-yellow for visibility on blue */
+  --blue-primary: #008080;   /* Teal – strong yet soft, better for text contrast */
+  --yellow:       #ffd43b;   /* Deep but vibrant yellow – readable on teal */
+  --cream:        #fff2cc;   /* Very pale cream – excellent for backgrounds */
+  --blue-accent:  #006666;   /* Deep teal – perfect for text or CTA contrast */
+  --orange:       #f47c20;   /* Rich orange with strong contrast */
+  --text:         #fff8e1;   /* Light buttery cream – visible on teal/orange */
 }
+
 
 /* Navbar */
 .navbar {
