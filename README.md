@@ -578,6 +578,46 @@ Each service package card follows a consistent Bootstrap 5 structure:
 | Ultimate Party Palooza        | Get the Full Party Package |
 
 
+### The Special Touch Section
+
+- **File**: `services.html`
+- **Purpose**: Adds a full-width card highlighting customisation options and inclusive services for children with allergies, sensory needs, or other additional requirements.
+
+## Implementation Details
+
+The section was placed immediately after the three service package cards, inside the same `.container`. To match the combined width of the three `.col-lg-4` cards above, the card was wrapped in a centered `.row` and constrained to `.col-lg-10`.
+
+### Key Features:
+- Text-only card (no image) to keep the message focused and readable.
+- Bootstrap grid (`col-12`, `col-lg-10`) used to control width and layout.
+- Additional margin (`mb-5`) added to provide spacing above the footer.
+- Fully responsive layout aligned with the rest of the services section.
+
+### HTML Snippet
+
+```html
+<div class="row g4 mb-5">
+  <div class="col-12 d-flex justify-content-center">
+    <div class="col-12 col-md-10 col-lg-10">
+      <div class="card h-100 p-4">
+        <div class="card-body">
+          <h2 class="card-title">The Special Touch</h2>
+          <p class="card-text">
+            We believe every child deserves a joyful celebration—no exceptions. That’s why our parties are fully customisable to suit individual needs, including children with allergies, sensory sensitivities, or additional support requirements.
+          </p>
+          <p class="card-text">
+            We can create calm, smaller-group events with seated activities like pottery painting, clay modelling, or collage making—perfect for kids who prefer a quieter space. Need a nut-free table? Gluten-free cake? No problem.
+          </p>
+          <p class="card-text">
+            And if you'd like a little prosecco for the grown-ups while the kids get creative, just let us know—we’ve got that covered too.
+          </p>
+          <a href="contact.html" class="btn btn-primary mt-3">Tell Us What You Need</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
 
 ## Version History and Commit Highlights
 
@@ -590,11 +630,11 @@ Each service package card follows a consistent Bootstrap 5 structure:
 * **Apt 29 ,2025** - Styled and added content to contact page/form
 * **Apr 30 ,2025** - About page added by reusing index.html code and adapt it with Bootstrap classes and costum css. 
 * **May 05 , 2025** - Fixed Contact page content aligment and footer. Created services.html page with content added
+* **May 06 , 2025** - Added `Special Touch` section to services and fixed/completed links and buttons acros all pages. 
 
 
 ## Future Enhancements
 
-* Develop pages for each card (About, Services, Special Touch, Contact) and link via card buttons.
 * Implement a contact form with client and server validation.
 * Add a Bootstrap modal for quick quotes or newsletter signup.
 * Conduct accessibility audits (ARIA roles, keyboard focus, contrast).
