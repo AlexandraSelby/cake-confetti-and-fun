@@ -820,7 +820,8 @@ The section was placed immediately after the three service package cards, inside
 - **Apt 29 ,2025** - Styled and added content to contact page/form
 - **Apr 30 ,2025** - About page added by reusing index.html code and adapt it with Bootstrap classes and costum css.
 - **May 05 , 2025** - Fixed Contact page content aligment and footer. Created services.html page with content added
-- **May 06 , 2025** - Added `Special Touch` section to services and fixed/completed links and buttons acros all pages. - Added validation to contact form with minimal JS - Tested all lines of code using css and html validator and fixed the issues - Tested accesabilty and changed the colour pallete
+- **May 06 , 2025** - Added `Special Touch` section to services and fixed/completed links and buttons acros all pages. - Added validation to contact form with minimal JS - Tested all lines of code using css and html validator and fixed the issues - Tested accesabilty and changed the 
+-colour pallete
 
 ## Future Enhancements
 
